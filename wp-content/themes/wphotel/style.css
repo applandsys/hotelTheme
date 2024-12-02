@@ -1,0 +1,103 @@
+/*
+Theme Name: Hotel Plaza
+Theme URI: https://soilapps.com/wphotel
+Author: Tarique Mosharraf
+Author URI: https://soilapps.com/wphotel
+Description: Hotel website theme
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v1
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wphotel
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-img, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2{
+    font-family: sans-serif;
+}
+
+
+/*tariq *
+
+ */
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(191 17 17 / 90%);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(24 23 23 / 55%);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+..navbar-light .navbar-nav .nav-link:hover{
+    color:red;
+    font-size: 20px;
+}
+
+/* menubar */
+.main-navigation {
+    background-color: #333;
+    padding: 10px;
+}
+
+.main-navigation .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation .menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-navigation .menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-navigation .menu li a:hover {
+    background-color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-toggle {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+    }
+
+    .menu-toggle.active + .menu {
+        display: block;
+    }
+}
+
+/* end Menubar */
+
+/* custom logo */
+.custom-logo {
+    max-width: 100%; /* Adjust the size as needed */
+    height: auto;
+}
+.custom-logo-link {
+    display: inline-block; /* Ensure it doesn't break layout */
+}
+/* end custom logo */
